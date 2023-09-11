@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  app:
+    build: ./app/
+    depends_on:
+      db:
+        condition: service_healthy
+    links:
+      - db
+  db:
+    image: postgres:latest
+    ports:
+      - 5434:5432
+    environment:
+      POSTGRES_USER: denis
+      POSTGRES_PASSWORD: 000111
+      POSTGRES_DB: database
+    volumes:
+      -./docker-example/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "denis"]
+      interval: 5s
+      timeout: 30s
+      retries: 5
+    restart: always
