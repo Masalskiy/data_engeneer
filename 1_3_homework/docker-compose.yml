@@ -1,0 +1,30 @@
+version: '3.8'
+#использовать определенную версию Compose file
+services:
+#определяет какие сервисы должны быть запущены
+  db:
+  #название сервиса
+    image: postgres:latest
+    #используемый образ
+    ports:
+      - 5434:5432
+      #порт хоста : порт контейнера
+    environment:
+    #переменные среды
+      POSTGRES_USER: denis
+      POSTGRES_PASSWORD: '000111'
+      POSTGRES_DB: database
+    volumes:
+      #определение скрипта данных
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      #определение скрипта для запуска при создании контейнера
+      - /1_3_homework/myvolume:/var/lib/postgresql/data
+
+    healthcheck:
+    #проверка состояния контейнера
+      test: ["CMD", "pg_isready", "-U", "denis", "000111"]
+      interval: 5s
+      timeout: 30s
+      retries: 5
+    restart: always
+
