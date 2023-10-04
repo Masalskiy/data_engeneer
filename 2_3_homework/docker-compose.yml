@@ -19,6 +19,9 @@ services:
       #определение скрипта данных
       - ./sql-scripts/ddl.sql:/docker-entrypoint-initdb.d/ddl.sql
       - ./sql-scripts/dml.sql:/docker-entrypoint-initdb.d/dml.sql
+      #определение скрипта для запуска при создании контейнера
+      - /myvolume1:/var/lib/postgresql/data
+
     healthcheck:
     #проверка состояния контейнера
       test: ["CMD", "pg_isready", "-U", "denis", "000111"]
