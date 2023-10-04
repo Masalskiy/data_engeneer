@@ -1,9 +1,10 @@
 # Запуск проекта
-sudo docker compose up -d 
-bd name library
+**sudo docker compose up -d** <br>
+название базы данных **library** <br>
+разворачивается на порте **5434**
 
-для обновления представления
-REFRESH MATERIALIZED VIEW reader_list_books
+для обновления представления <br>
+**REFRESH MATERIALIZED VIEW reader_list_books**
 
 
 # Предметная область
