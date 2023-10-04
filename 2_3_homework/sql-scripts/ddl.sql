@@ -1,5 +1,3 @@
-drop table public.OrderDetails CASCADE;
-
 create table if not exists public.Customers (
 	CustomerID serial primary key,
 	FirstName varchar(40),
