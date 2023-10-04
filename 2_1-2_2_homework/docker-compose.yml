@@ -16,7 +16,9 @@ services:
       POSTGRES_DB: 'library'
     volumes:
       #определение скрипта данных
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - .2_1-2_2_homework/sql-scripts/ddl.sql:/docker-entrypoint-initdb.d/ddl.sql
+      - .2_1-2_2_homework/sql-scripts/ddl.sql:/docker-entrypoint-initdb.d/materialized_views.sql
+      - .2_1-2_2_homework/sql-scripts/dml.sql:/docker-entrypoint-initdb.d/dml.sql
       #определение скрипта для запуска при создании контейнера
       - /2_1-2_2_homework/myvolume:/var/lib/postgresql/data
 
