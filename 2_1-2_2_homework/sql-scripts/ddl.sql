@@ -1,17 +1,17 @@
-DROP table public.rchild ; --1
-DROP table public.radult;--2
-drop table public.rlibcard CASCADE;--3
-drop table public.sauthor CASCADE;--4
-drop table public.spublisher CASCADE;--5
-drop table public.sudc CASCADE;--6
-drop table public.cformat CASCADE;--7
-drop table public.cbinding CASCADE;--8
-drop table public.cgenre CASCADE;--9
-drop table public.rbook CASCADE;--10
-drop table public.authorbook;--11
-drop table public.genrebook;--12
-drop table public.instancebook CASCADE;--13
-drop table public.jlibticket cascade;--14
+--DROP table public.rchild ; --1
+--DROP table public.radult;--2
+--drop table public.rlibcard CASCADE;--3
+--drop table public.sauthor CASCADE;--4
+--drop table public.spublisher CASCADE;--5
+--drop table public.sudc CASCADE;--6
+--drop table public.cformat CASCADE;--7
+--drop table public.cbinding CASCADE;--8
+--drop table public.cgenre CASCADE;--9
+--drop table public.rbook CASCADE;--10
+--drop table public.authorbook;--11
+--drop table public.genrebook;--12
+--drop table public.instancebook CASCADE;--13
+--drop table public.jlibticket cascade;--14
 
 --определить on delete
 
