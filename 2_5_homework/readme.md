@@ -1,8 +1,7 @@
-
 # Запуск проекта
 **sudo docker compose up -d** <br>
-название базы данных **shop-electronic** <br>
-разворачивается на порте **5434** <br>
+остановка <br>
+**sudo docker compose down** <br>
 
 для обновления витрины <br>
 **REFRESH MATERIALIZED VIEW reader_list_books**
