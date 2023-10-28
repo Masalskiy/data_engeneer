@@ -1,8 +1,0 @@
-configparser==6.0.0
-jsonpath-ng==1.6.0
-jsonschema==4.19.1
-jsonschema-specifications==2023.7.1
-psycopg2-binary==2.9.9
-requests==2.31.0
-requests-toolbelt==1.0.0
-pandas==2.1.1
