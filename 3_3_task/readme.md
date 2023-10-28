@@ -12,10 +12,11 @@
 https://exchangerate.host/documentation
 
 # Запуск проекта
+добавить в config.ini api key
 ## Локальный запуск
 Для работы необходим python 3.10
 1. Запустить БД docker compose up
-2. убудиться что в config.ini pg_hostname 0.0.0.0
+2. Убедиться что в config.ini pg_hostname 0.0.0.0
 3. Создать и активировать виртуальную среду
     - python3 -m venv venv
     - source venv/bin/activate
@@ -24,7 +25,7 @@ https://exchangerate.host/documentation
 Для отключения виртуальной среды **deactivate**
 
 ## при помощи Docker
-1. убудиться что в config.ini pg_hostname host.docker.internal
+1. Убедиться что в config.ini pg_hostname host.docker.internal
 1. docker build -t api .
 2. docker compose up
 3. docker run api == docker run api l BTC RUB
