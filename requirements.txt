@@ -1,0 +1,6 @@
+psycopg2
+pandas
+requests
+apache-airflow
+apache-airflow-providers-common-sql
+apache-airflow-providers-postgres[amazon]

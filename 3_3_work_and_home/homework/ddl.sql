@@ -78,27 +78,8 @@ create table if not exists statistic_rate(
 	min_curr_rate decimal,
 	min_curr_date date,
 	avg_rate_month decimal,
-	last_rate_in_month decimal not null,
+	last_rate_in_month decimal check(last_rate_in_month>0),
 	last_date_in_month timestamp
 );
 
 ALTER TABLE statistic_rate ADD CONSTRAINT unique_stat_raw UNIQUE (year_month, from_curr, to_curr);
-select * from statistic_rate
-
-CREATE OR REPLACE FUNCTION maint_rate() 
-returns trigger     
-LANGUAGE PLPGSQL
-as 
-$name1111$
-	declare
-	
-	begin
-		
-		RETURN null;
-	end;
-$name1111$;
-
-create trigger maint_insert_rate
-	before insert on statistic_rate
-	for each row 
-	execute procedure maint_rate();
