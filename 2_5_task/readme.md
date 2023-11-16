@@ -15,7 +15,7 @@
 В таблице plan хранится информация о планировании по продажам тех или иных товаров на конец месяца. <br>
 
 В таблице products хранится общая информация по каждому из товаров.<br>
-![er diagramm](/2_5_homework/diagram/er-shop-diagram.drawio.png)
+![er diagramm](/2_5_task/diagram/er-shop-diagram.drawio.png)
 
 
 # ✅ Задание
