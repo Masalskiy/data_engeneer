@@ -212,7 +212,7 @@ ISBN - Индетефикатор ISBN International Standard Book Number
 * Читатель Взрослый – Читатель Ребенок: один ко многим, неидентифицирующая.
 
 # ER-диаграмма
-![er diagramm](/2_1-2_2_homework/diagrams/er-library-diagramm.drawio.png)
+![er diagramm](/2_1-2_2_theory/diagrams/er-library-diagramm.drawio.png)
 
 ## Доказательство того, что все сущности в модели соответствуют нормализованным реляционным отношениям.
 1.	Проверка на 1 НФ.
