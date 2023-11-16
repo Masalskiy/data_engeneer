@@ -60,6 +60,6 @@
     - ReviewText (text) — текст отзыва.
 
 # ER-диаграмма
-![er diagramm](/2_3_homework/er-diagram/er-shop-diagram.drawio.png)
+![er diagramm](/2_3_task/er-diagram/er-shop-diagram.drawio.png)
 
 
