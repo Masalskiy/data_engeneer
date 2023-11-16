@@ -45,8 +45,8 @@
 Добавил суррогатный ключ *product_key* для уникальной идентефикации записи.<br>
 4 тип SCD выбран т.к. цены и акции могут часто меняться, что может сильно перегрузить таблицу большим колличесвом записей, а для аналитики нам важна историчность.
 <br>
-![er diagramm](/2_6_homework/diagram/ERD-DWH-shop.jpg)
+![er diagramm](/2_6_task/diagram/ERD-DWH-shop.jpg)
 <br>
 Для задания ПРО <br>
-![er diagramm](/2_6_homework/diagram/ERD-DWH-shop-PRO.jpg)
+![er diagramm](/2_6_task/diagram/ERD-DWH-shop-PRO.jpg)
 
