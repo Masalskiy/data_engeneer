@@ -31,7 +31,7 @@ https://exchangerate.host/documentation
 3. docker run api == docker run api l BTC RUB
 
 ### Отключение
-docker compose down
+docker compose down --volumes
 
 # Что можно сделать?
     - l загрузить текущий курс обмена 
